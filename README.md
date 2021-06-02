@@ -23,17 +23,22 @@ To get and tokenize data, use the github repository [tpimentelms/wiki-tokenizer]
 
 ## Get Polysemy Estimates
 
-Get the embeddings:
+To get the embeddings, run the following command:
 ```bash
 $ make get_embeddings LANGUAGE=en
 ```
+The languages supported in this repository are: af, ar, bn, en, et, fa, fi, he, id, is, kn, ml, mr, pt, tl, tr, tt, yo.
+Further, you can control the amount of used data with optional parameters `MAX_LINES`. In the paper, we used `1,000,000` sentences, but we left the default here to `100,000`. To increase it back, just run:
+```bash
+$ make get_embeddings LANGUAGE=en MAX_LINES=1000000
+```
 
-Merge embeddings per word and get their covariances:
+After getting the embeddings, merge them per word and get their covariances:
 ```bash
 $ make merge_embeddings LANGUAGE=en
 ```
 
-Get a tsv with polysemy estimates:
+Finally, get a tsv with polysemy estimates by running:
 ```bash
 $ make get_polysemy LANGUAGE=en
 ```
