@@ -17,11 +17,11 @@ $ # conda install pytorch torchvision cpuonly -c pytorch
 $ pip install transformers
 ```
 
-# Get wikipedia data
+## Get wikipedia data
 
 To get and tokenize data, use the github repository [tpimentelms/wiki-tokenizer](https://github.com/tpimentelms/wiki-tokenizer).
 
-# Get Polysemy Estimates
+## Get Polysemy Estimates
 
 Get the embeddings:
 ```bash
@@ -41,7 +41,7 @@ This file will be located in 'results/<lang>/polysemy_var.tsv' (for the polysemy
 
 
 
-# Get Surprisal Estimates
+## Get Surprisal Estimates
 
 Train bert to handle per word prediction:
 ```bash
@@ -59,7 +59,7 @@ $ make merge_surprisal LANGUAGE=en
 ```
 
 
-# Analysis
+## Analysis
 
 
 Finally, to analyse the results first merge polysemy and surprisals for all languages:
