@@ -1,0 +1,22 @@
+name: bert-ambiguity
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.7
+  - numpy
+  - pandas
+  - scikit-learn
+  - spacy
+  - nltk
+  - gensim
+  - tqdm
+  - matplotlib
+  - pylint
+  - pip
+  - pip:
+    - seaborn
+    - ipdb
+    - homoglyphs
+    - statsmodels
