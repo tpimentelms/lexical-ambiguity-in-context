@@ -17,11 +17,11 @@ $ # conda install pytorch torchvision cpuonly -c pytorch
 $ pip install transformers
 ```
 
-## Get wikipedia data
+# Get wikipedia data
 
 To get and tokenize data, use the github repository [tpimentelms/wiki-tokenizer](https://github.com/tpimentelms/wiki-tokenizer).
 
-# Get embeddings
+# Get Polysemy Estimates
 
 Get the embeddings:
 ```bash
@@ -41,7 +41,7 @@ This file will be located in 'results/<lang>/polysemy_var.tsv' (for the polysemy
 
 
 
-# Get surprisals
+# Get Surprisal Estimates
 
 Train bert to handle per word prediction:
 ```bash
@@ -74,9 +74,32 @@ $ python src/h04_analysis/print_bert_correlations.py
 $ python src/h04_analysis/print_wordnet_correlations.py
 ```
 
-# Make script for a language
 
-Use the Makefile to do all steps above at once!
+## Extra Information
+
+#### Citation
+
+If this code or the paper were usefull to you, consider citing it:
+
 ```bash
-$ make LANGUAGE=en
+@inproceedings{pimentel-etal-2020-speakers,
+    title = "Speakers Fill Lexical Semantic Gaps with Context",
+    author = "Pimentel, Tiago  and
+      Hall Maudslay, Rowan  and
+      Blasi, Damian  and
+      Cotterell, Ryan",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.emnlp-main.328",
+    doi = "10.18653/v1/2020.emnlp-main.328",
+    pages = "4004--4015",
+}
 ```
+
+
+#### Contact
+
+To ask questions or report problems, please open an [issue](https://github.com/tpimentelms/lexical-ambiguity-in-context/issues).
