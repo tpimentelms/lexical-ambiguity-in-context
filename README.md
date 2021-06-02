@@ -20,6 +20,7 @@ $ pip install transformers
 ## Get wikipedia data
 
 To get and tokenize data, use the github repository [tpimentelms/wiki-tokenizer](https://github.com/tpimentelms/wiki-tokenizer).
+Place the tokenized data in path `data/<language_code/src.txt`.
 
 ## Get Polysemy Estimates
 
